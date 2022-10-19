@@ -1,0 +1,98 @@
+body {
+    // background: red !important;
+}
+
+// .transition-off * {
+//     transition: none !important;
+// }
+
+// BS Abstract
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins/grid";
+@import "bootstrap/scss/mixins/utilities";
+//BS reboot
+@import "bootstrap/scss/reboot";
+// BS grid
+@import "bootstrap/scss/bootstrap-grid";
+
+// BS components
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/dropdown";
+
+//@import "bootstrap";
+
+// PLUGINS
+@import "vue-select/dist/vue-select.css";
+
+// fonts
+@import "base/fonts";
+@import "base/typography";
+
+// Custom components
+@import "components/helpers";
+@import "components/buttons";
+@import "components/blur-item";
+@import "components/inputs";
+ @import "components/select";
+ @import "components/grid";
+ @import "components/breadcrumbs";
+ @import "components/catalog";
+ @import "components/capabilities";
+ @import "components/banner-card";
+ @import "components/product-catalog";
+ @import "components/statistic";
+ @import "components/tarif";
+ @import "components/tariff-card";
+ @import "components/marketing-banner";
+ @import "components/advantages";
+@import "components/faq";
+ @import "components/tender-card";
+ @import "components/table";
+ @import "components/modals/modal";
+ @import "components/modals/modal-auth";
+ @import "components/modals/modal-region";
+ @import "components/modals/modal-location";
+ @import "components/navigation";
+ @import "components/pagination";
+ @import "components/recovery";
+ @import "components/info-block";
+ @import "components/personal-account-sidebar";
+ @import "components/black-card";
+ @import "components/product-item";
+ @import "components/loader";
+ @import "components/advertisement-card";
+ @import "components/dictionary-menu";
+ @import "components/status";
+ @import "components/customer-info";
+ @import "components/describe-flash";
+ @import "components/about-project";
+ @import "components/saving";
+ //@import "components/banner-top";
+ @import "components/dropzona";
+ @import "components/nav";
+
+//Layout
+@import "layout/header";
+@import "layout/footer";
+
+// // pages
+// @import "pages/advertisment";
+ @import "pages/register";
+// @import "pages/ceni-postavshikov-card";
+// @import "pages/advertisement-card";
+// @import "pages/tender-page";
+// @import "pages/additional";
+// @import "pages/add-price-list";
+// @import "pages/add-tender";
+// @import "pages/basket";
+// @import "pages/personal-account";
