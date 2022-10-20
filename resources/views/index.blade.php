@@ -11,6 +11,7 @@
 <body>
     <div id="root"></div>
 
-    @vite('resources/js/main.js')
+    @viteReactRefresh
+    @vite('resources/js/index.jsx')
 </body>
 </html>
