@@ -251,7 +251,7 @@ input[type="checkbox"]:checked+span:after {
     transform: translateY(-9px);
     width: 16px;
     height: 16px;
-    background-image: url('@/img/check-icon.svg');
+    background-image: url('/img/check-icon.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -331,4 +331,9 @@ input[type="checkbox"]:checked+span:after {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.error-message {
+    margin-top: -12px;
+    transform: translateY(-8px)
 }

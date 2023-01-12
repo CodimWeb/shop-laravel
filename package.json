@@ -12,6 +12,7 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
+        "@reduxjs/toolkit": "^1.8.6",
         "@vitejs/plugin-react": "^2.1.0",
         "bootstrap": "^5.2.1",
         "inputmask": "^5.0.7",
@@ -19,8 +20,6 @@
         "react-dom": "^18.2.0",
         "react-redux": "^8.0.4",
         "react-router-dom": "^6.4.2",
-        "redux": "^4.2.0",
-        "redux-thunk": "^2.4.1",
         "sass": "^1.54.9"
     }
 }

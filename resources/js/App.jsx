@@ -1,17 +1,25 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store'
 
 import Home from "./pages/Home";
 import Register from "./pages/Registration";
+import Login from "./pages/Login";
+import Page404 from './pages/Page404';
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path='/registration' element={<Register/>} />
-            </Routes>
-        </BrowserRouter>
+        <Provider store={store}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />}/>
+                    <Route path='/registration' element={<Register/>} />
+                    <Route path='/login' element={<Login/>} />
+                    <Route path='*' element={<Page404/>} />
+                </Routes>
+            </BrowserRouter>
+        </Provider>
     )
 }
 

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use App\Models\User;
 use App\Http\Requests\User\UserRequest;
 use Illuminate\Support\Facades\Hash;
+use App\Models\User;
+use App\Models\Role;
 
 class UserController extends Controller
 {
@@ -22,8 +24,18 @@ class UserController extends Controller
         else {
             $user = User::create($data);
             $token = auth()->tokenById($user->id);
-            return response()->json(['access_token' => $token]);
+            return response()->json([
+                'access_token' => $token,
+                'user' => auth()->user()
+            ]);
         }
+    }
+
+    public function getUser(User $userModel) :JsonResponse
+    {
+        $user = auth()->user();
+        $user['roles'] = $userModel->where('id', $user['id'])->first()->roles;
+        return response()->json($user);
     }
 
     public function getUsers() {

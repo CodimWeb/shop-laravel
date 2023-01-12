@@ -1,11 +1,33 @@
+import { useSelector, useDispatch } from "react-redux";
+import {addData, removeData, reverseData} from "../store/slices/testSlice";
+
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+
 const Home = () => {
+
+    const data = useSelector(state => state.test.data)
+    const dispatch = useDispatch()
+
+
+    console.log(data)
+
     return (
         <>
             <Header/>
+            <button className="btn btn-primary" onClick={() => {dispatch(addData({id: data.length, name: `asdasd ${data.length}`}))}}>add data</button>
+            <button className="btn btn-primary" onClick={() => {dispatch(reverseData())}} ></button>
+            <br/>
+            <br/>
+            {data.map((item, index) =>
+                <div key={index}>
+                    <div>{item.name}</div>
+                    <button className="btn btn-primary">remove</button>
+                </div>
+            )}
             <div>Content</div>
+
             {/*<div className="home content">*/}
             {/*    <section className="statistic">*/}
             {/*        <div className="container">*/}
